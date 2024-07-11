@@ -11,6 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
     background: rgb(130, 106, 251);
 }
 .container{
@@ -19,4 +20,35 @@ body{
     width: 100%;
     background-color: white;
     padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form .input-box input{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    
 }
