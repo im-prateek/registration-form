@@ -62,6 +62,12 @@ body{
     column-gap: 15px;
 }
 
+.form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    
+}
+
 /* responsive */
 @media screen and (max-width: 500px){
     .form .column{
