@@ -62,16 +62,41 @@ body{
     column-gap: 15px;
 }
 
-.form :where(.gender-option, .gender) {
+.form .genderbox {
+    margin-top: 20px;
+}
+
+.genderbox h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    
+}
+
+.form :where(.genderoption, .gender) {
     display: flex;
     align-items: center;
-    
+    column-gap: 50px;
+    flex-wrap: wrap;   
+}
+
+.form .gender {
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label) {
+    cursor: pointer;
 }
 
 /* responsive */
 @media screen and (max-width: 500px){
     .form .column{
         flex-wrap: wrap;
+    }
+
+    .form :where(.genderoption, .gender){
+        row-gap: 15px;
     }
     
 }
